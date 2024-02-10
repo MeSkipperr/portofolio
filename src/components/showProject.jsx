@@ -1,6 +1,7 @@
 // ShowProject.jsx
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { projectData } from './projectData.js';
 
@@ -56,37 +57,6 @@ export default function ShowProject({language}) {
         </div>
     );
 }
-{/* <h1>Path: {selectProject.path} </h1>
-{otherProject.map((project) => (
-    <h1 key={project.title}>Title: {project.title}</h1>
-))} */}
-
-
-{/* <div className="w-full pb-20 pt-24 px-4 ">
-<div className="  w-full h-1/2 flex justify-center items-center">
-    <img src={selectProject.image} alt="project"  className='w-52'/>
-</div>
-<h1 className='font-bold text-xl dark:text-white'>{selectProject.title}</h1>
-<p className=' text-lg dark:text-white'>{language ? selectProject.subID : selectProject.subEN} </p>
-</div>
-<div className="h-[25%] bg-[#101012] flex overflow-auto">
-{otherProject.map((project) => (
-<>
-    <div className="h-full w-96 sm:w-[40rem] flex justify-center items-center gap-4">
-        <div className="w-1/2 flex justify-center items-center">
-        <img src={project.image} alt="project"  className='w-3/4 '/>
-        </div>
-        <div className="w-1/2 ">
-                <h1 className='font-bold text-xl dark:text-white'>{project.title}</h1>
-                <p className=' text-lg dark:text-white truncate '>{language ? project.subID : project.subEN} </p>
-        </div>
-    </div>
-</>
-))} 
-</div> */}
-
-
-{/* <div className="w-32 ">
-<img src={project.image} alt="project"  className='w-full'/>
-<h1 className='font-bold text-xl dark:text-white'>{project.title}</h1>
-</div> */}
+ShowProject.propTypes = {
+    language: PropTypes.bool.isRequired,
+}

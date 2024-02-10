@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
 import { useState,useEffect,useRef } from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { projectData } from './projectData.js';
 
 export default function Project({ language }) {
+    useEffect(() => {
+        AOS.init({}); // Inisialisasi AOS
+    }, []);
+    
+
     const [show, setShow] = useState(false);
     const [projectsToShow, setProjectsToShow] = useState(3);
 
@@ -82,6 +88,8 @@ export default function Project({ language }) {
                     <div
                         key={index}
                         className="rounded  m-auto bg-white w-3/4 p-2 pt-4 relative shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                        data-aos="fade-up"
+                        data-aos-delay={'100'*index}
                     >
                         <img src={project.image} className="w-60 rounded m-auto sm:w-72" alt={`Project ${index + 1}`} />
                         <div className="w-auto p-2">
