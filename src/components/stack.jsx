@@ -17,7 +17,7 @@ import excel from '../assets/otherSkill/excel.svg';
 import git from '../assets/otherSkill/git.svg';
 import powerpoint from '../assets/otherSkill/powerpoint.svg';
 import ps from '../assets/otherSkill/ps.svg';
-import word from '../assets/otherSkill/word.png';
+import word from '../assets/otherSkill/word.svg';
 import mikrotik from '../assets/otherSkill/mikrotik.png';
 import cisco from '../assets/otherSkill/cisco.png';
 

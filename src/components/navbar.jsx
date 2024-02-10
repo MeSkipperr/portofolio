@@ -1,7 +1,7 @@
 import { useState ,useEffect} from 'react'
 import PropTypes from 'prop-types';
-import darkImage from '../assets/dark.png';
-import lightImage from '../assets/light.png';
+import darkImage from '../assets/dark.svg';
+import lightImage from '../assets/light.svg';
 
 
 
