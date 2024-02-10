@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 import { text, curve, translate } from './anim.js';
 import '../style/transition.css'
 
@@ -31,10 +32,8 @@ const Curve = ({ children, backgroundColor }) => {
             "/project": sessionLanguage === 'ID' ? "Proyek" : "Project",
             "/service": sessionLanguage === 'ID' ? "Layanan" : "Service",
             "/contact": sessionLanguage === 'ID' ? "Kontak" : "Contact",
-            ...(sessionLanguage === 'EN' || sessionLanguage === null ? {
-                "/project/project1": 'project1',
-                "/project/project2": 'project2'
-            } : {})
+            "/project/project1": 'project 1',
+            "/project/project2": 'project 2'
         };
     }, []);
 
@@ -48,6 +47,10 @@ const Curve = ({ children, backgroundColor }) => {
             {children}
         </div>
     );
+};
+Curve.propTypes = {
+    children: PropTypes.node.isRequired,
+    backgroundColor: PropTypes.string.isRequired
 };
 
 const SVG = ({ height, width }) => {
@@ -73,6 +76,11 @@ const SVG = ({ height, width }) => {
         </motion.svg>
     );
 };
+SVG.propTypes = {
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired
+};
+
 
 const anim = (variants) => ({
     variants,
