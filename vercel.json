@@ -21,7 +21,27 @@
             "dest": "/"
         },
         {
-            "src": "/project/:projectName",
+            "src": "/project/project1",
+            "dest": "/"
+        },
+        {
+            "src": "/project/project2",
+            "dest": "/"
+        },
+        {
+            "src": "/project/project3",
+            "dest": "/"
+        },
+        {
+            "src": "/project/project4",
+            "dest": "/"
+        },
+        {
+            "src": "/project/project5",
+            "dest": "/"
+        },
+        {
+            "src": "/project/project6",
             "dest": "/"
         }
     ]
