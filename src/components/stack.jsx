@@ -6,7 +6,7 @@ import css from '../assets/stact/css.svg';
 import html from '../assets/stact/html.svg';
 import js from '../assets/stact/js.svg';
 import php from '../assets/stact/php.svg';
-import nodejs from '../assets/stact/nodeJS.svg';
+import nodejs from '../assets/stact/NodeJS.svg';
 import sql from '../assets/stact/sql.svg';
 import mongodb from '../assets/stact/mongodb.svg';
 import react from '../assets/stact/react.svg';
