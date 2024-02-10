@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
-import './App.css'
+import './app.css'
 import './input.css'
 import './output.css'
 import Navbar from './components/navbar'
