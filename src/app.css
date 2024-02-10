@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&family=Pacifico&family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@600&family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    /* text-align: center; */
+    scroll-padding-top:1.5rem;
+}
+body::-webkit-scrollbar {
+    width: 0; /* Lebar scroll bar */
+  }
+.content label{
+    cursor: pointer;
+    font-size: 18px;
+}
+.label-divider{
+    width: 0.5px;
+    background-color: #181818;
+    font-weight: bolder;
+    border-color: #181818;
+}
+.language-label input[type="radio"]:hover + p{
+    color: #5CB4E8;
+} 
+.language-label input[type="radio"]:checked + p {
+    color: #8756FF; /* Warna teks ketika input terpilih */
+    font-weight: bold;
+}
+.btnHero{
+    transition:0.8s;
+    position:relative;
+    overflow:hidden;
+    z-index:2;
+}
+.btnHero::before{
+    content:'';
+    position:absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background:#06a4ff;
+    z-index:-1;
+    bottom:0;
+    border-radius:50% 50% 0 0;
+    transition: 0.8s;
+}
+.btnHero:hover::before{
+    height:180%;
+}
+
+.slider-Text {
+    /* font-family: 'Archivo Black', sans-serif; */
+    font-family: 'Source Code Pro', monospace;
+    /* -webkit-text-stroke: 3px black; */
+}
+.name{
+    font-family: 'Kalnia', serif;
+}
+.text-Small{
+    margin-left: 4px;
+    font-size: 0.9rem;
+}
+
+.inputContactForm:focus{
+    outline: none;
+}
+.inputContactForm::placeholder {
+  font-size: 14px; /* Atur ukuran teks placeholder di sini */
+}
+.submitContact{
+    background-color: #8756ff !important;
+}
