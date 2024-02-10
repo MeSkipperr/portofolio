@@ -2,21 +2,21 @@ import PropTypes from 'prop-types';
 import Marquee from 'react-fast-marquee';
 import { useMemo } from 'react'; // Import useMemo for performance optimization
 
-import css from '../assets/stact/css.png';
-import html from '../assets/stact/html.png';
-import js from '../assets/stact/js.png';
-import php from '../assets/stact/php.png';
-import nodejs from '../assets/stact/nodejs.png';
-import sql from '../assets/stact/sql.png';
-import mongodb from '../assets/stact/mongodb.png';
-import react from '../assets/stact/react.png';
-import tailwind from '../assets/stact/tailwind.png';
+import css from '../assets/stact/css.svg';
+import html from '../assets/stact/html.svg';
+import js from '../assets/stact/js.svg';
+import php from '../assets/stact/php.svg';
+import nodejs from '../assets/stact/nodeJS.svg';
+import sql from '../assets/stact/sql.svg';
+import mongodb from '../assets/stact/mongodb.svg';
+import react from '../assets/stact/react.svg';
+import tailwind from '../assets/stact/tailwind.svg';
 
-import ai from '../assets/otherSkill/ai.png';
-import excel from '../assets/otherSkill/excel.png';
-import git from '../assets/otherSkill/git.png';
-import powerpoint from '../assets/otherSkill/powerpoint.webp';
-import ps from '../assets/otherSkill/ps.webp';
+import ai from '../assets/otherSkill/ai.svg';
+import excel from '../assets/otherSkill/excel.svg';
+import git from '../assets/otherSkill/git.svg';
+import powerpoint from '../assets/otherSkill/powerpoint.svg';
+import ps from '../assets/otherSkill/ps.svg';
 import word from '../assets/otherSkill/word.png';
 import mikrotik from '../assets/otherSkill/mikrotik.png';
 import cisco from '../assets/otherSkill/cisco.png';
