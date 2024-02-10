@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Footer({language}){
     const aboutURL =  () => {
         switch (location.pathname) {
@@ -40,9 +42,9 @@ export default function Footer({language}){
                     </div>
                     <div className="flex flex-col lg:px-12">
                         <p className="dark:text-white text-lg sm:text-3xl">Sosial</p>
-                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" href="/">Email</a>
-                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" href="">Github</a>
-                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" href="">Instagram</a>
+                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" target='blank' href="mailto:ikadekyolaandika02@gmail.com">Email</a>
+                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" target='blank' href="https://github.com/MeSkipperr">Github</a>
+                        <a className="pl-1 text-[#A2A9B4] text-sm sm:text-xl" target='blank' href="https://www.instagram.com/kdk.yolaandika">Instagram</a>
                     </div>
                 </div >
                 <hr className='border-t-1 sm:border-t-2 border-black dark:border-white my-4' />
@@ -50,4 +52,7 @@ export default function Footer({language}){
             </div>
         </div>
     )
+}
+Footer.propTypes = {
+    language: PropTypes.bool.isRequired,
 }

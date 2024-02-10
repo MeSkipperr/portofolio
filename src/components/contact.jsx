@@ -38,11 +38,11 @@ export default function Contact({language}) {
                 <form ref={form} onSubmit={sendEmail} action='/contact'>
                     {/* Name input */}
                     <hr className='border-t-1 sm:border-t-2 border-black dark:border-white my-4' />
-                    <p className='dark:text-white sm:text-2xl'>{language ? 'Nama' : "Name"}<span className='px-1 text-red-600'>*</span></p>
+                    <label htmlFor="user_name" className='dark:text-white sm:text-2xl'>{language ? 'Nama' : "Name"}<span className='px-1 text-red-600'>*</span></label>
                     <input
                         type="text"
                         name="user_name"
-                        id=""
+                        id="user_name"
                         required
                         placeholder="I Kadek Yola Andika"
                         className="inputContactForm dark:text-white p-2 w-full h-10 bg-transparent sm:h-20 sm:placeholder:text-2xl sm:text-2xl"
@@ -50,11 +50,11 @@ export default function Contact({language}) {
 
                     {/* Email input */}
                     <hr className='border-t-1 sm:border-t-2 border-black dark:border-white my-4' />
-                    <p className='dark:text-white sm:text-2xl'>Email<span className='px-1 text-red-600'>*</span></p>
+                    <label htmlFor='user_email' className='dark:text-white sm:text-2xl'>Email<span className='px-1 text-red-600'>*</span></label>
                     <input
                         type="email"
                         name="user_email"
-                        id=""
+                        id="user_email"
                         required
                         placeholder="ikadek@yola.com"
                         className="inputContactForm dark:text-white p-2 w-full h-10 bg-transparent sm:h-20 sm:placeholder:text-2xl sm:text-2xl"
@@ -62,11 +62,11 @@ export default function Contact({language}) {
 
                     {/* Services input */}
                     <hr className='border-t-1 sm:border-t-2 border-black dark:border-white my-4' />
-                    <p className='dark:text-white sm:text-2xl'>{language ? 'Apa layanan yang sedang anda cari?' : "What services are you looking for?"} <span className='px-1 text-red-600'>*</span></p>
+                    <label htmlFor='user_service' className='dark:text-white sm:text-2xl'>{language ? 'Apa layanan yang sedang anda cari?' : "What services are you looking for?"} <span className='px-1 text-red-600'>*</span></label>
                     <input
                         type="text"
                         name="user_service"
-                        id=""
+                        id="user_service"
                         required
                         placeholder="Web Development, Network Topology..."
                         className="inputContactForm dark:text-white p-2 w-full h-10 bg-transparent sm:h-20 sm:placeholder:text-2xl sm:text-2xl"
@@ -74,11 +74,11 @@ export default function Contact({language}) {
 
                     {/* Message input */}
                     <hr className='border-t-1 sm:border-t-2 border-black dark:border-white my-4' />
-                    <p className='dark:text-white sm:text-2xl'>{language ? 'Pesan' : "Message"}<span className='px-1 text-red-600'>*</span></p>
+                    <label htmlFor='user_message' className='dark:text-white sm:text-2xl'>{language ? 'Pesan' : "Message"}<span className='px-1 text-red-600'>*</span></label>
                     <input
                         type="text"
                         name="user_message"
-                        id=""
+                        id="user_message"
                         required
                         placeholder={language ? 'Halo Yola, bisakah bantu saya dengan...' : "Hello Yola, can you help me with..."}
                         className="inputContactForm dark:text-white p-2 w-full h-10 bg-transparent sm:h-20 sm:placeholder:text-2xl sm:text-2xl"
@@ -94,9 +94,9 @@ export default function Contact({language}) {
             <div className="my-8 w-full">
                 <p className='text-[#A2A9B4] sm:text-3xl'>{language ? 'Sosial' : "Social"}</p>
                 <div className="flex gap-4">
-                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' href="">Instagram</a>
-                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' href="">Email</a>
-                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' href="">GitHub</a>
+                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' target='blank' href="https://www.instagram.com/kdk.yolaandika">Instagram</a>
+                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' target='blank' href="mailto:ikadekyolaandika02@gmail.com">Email</a>
+                    <a className='dark:text-white hover:text-third dark:hover:text-third hover:underline sm:text-2xl' target='blank' href="https://github.com/MeSkipperr">GitHub</a>
                 </div>
             </div>
         </div>

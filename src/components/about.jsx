@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import PropTypes from 'prop-types';
 import  { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function About({ language }) {
@@ -39,7 +39,7 @@ export default function About({ language }) {
                     <div className=" bg-third text-base lg:text-xl text-white absolute px-4 py-2 rounded-lg lg:bottom-12 lg:right-8 bottom-4 right-2">Bali, Indonesia </div>
                     <div className="flex-col flex gap-4 m-4 absolute bottom-0 lg:hidden items-center" >
                         <a href="https://github.com/MeSkipperr" target="_blank" rel="noopener noreferrer" >
-                            <FontAwesomeIcon icon={faFacebook} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="3x" />
+                            <FontAwesomeIcon icon={faGithub} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="3x" />
                         </a>
                         <a href="https://www.instagram.com/kdk.yolaandika" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="3x" />
@@ -76,7 +76,7 @@ export default function About({ language }) {
             </div>
             <div className="hidden  absolute bottom-32  lg:flex gap-10 m-4">
                 <a href="https://github.com/MeSkipperr" target="_blank" rel="noopener noreferrer" >
-                    <FontAwesomeIcon icon={faFacebook} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
+                    <FontAwesomeIcon icon={faGithub} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
                 </a>
                 <a href="https://www.instagram.com/kdk.yolaandika" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
@@ -87,7 +87,4 @@ export default function About({ language }) {
             </div>
         </div>
     )
-}
-About.propTypes = {
-    language: PropTypes.bool.isRequired,
 }
