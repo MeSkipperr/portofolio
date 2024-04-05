@@ -65,7 +65,7 @@ export default function Project({ language }) {
                 <p onClick={showNetwork} className={` ${show ?"text-third underline" :"text-dark dark:text-white" } text-lg dark:hover:text-third hover:text-third cursor-pointer`}>{language ? 'Lainnya' : "Other"}</p>
             </div>
             <div  className="w-full mx-4 flex flex-col sm:flex-row sm:px-12 justify-center items-center  ">
-                <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="w-full flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {
                     show? 
                     projectData[0].projectOther.slice(0, projectsToShow).map((project, index) => (
