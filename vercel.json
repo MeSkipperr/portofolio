@@ -21,28 +21,29 @@
             "dest": "/"
         },
         {
-            "src": "/project/project1",
-            "dest": "/"
+            "src": "/project/classTKJ2",
+            "dest": "TKJ 2"
         },
         {
-            "src": "/project/project2",
-            "dest": "/"
+            "src": "/project/cloudfile",
+            "dest": "Cloud File"
         },
         {
-            "src": "/project/project3",
-            "dest": "/"
+            "src": "/project/digitalClock",
+            "dest": "Digital Clock"
         },
         {
-            "src": "/project/project4",
-            "dest": "/"
+            "src": "/project/linktree",
+            "dest": "Link Tree"
         },
         {
-            "src": "/project/project5",
-            "dest": "/"
+            "src": "/project/server",
+            "dest": "Server"
         },
         {
-            "src": "/project/project6",
-            "dest": "/"
+            "src": "/project/ipAddress",
+            "dest": "IP Address"
         }
     ]
+    
 }

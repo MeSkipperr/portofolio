@@ -76,7 +76,7 @@ const Hero = ({ language }) => {
       <img
         ref={image}
         src={foto}
-        className="w-80 mx-auto sm:w-7/12 lg:w-3/12 z-10"
+        className="w-72 mx-auto sm:w-7/12 lg:w-3/12 z-10"
         alt="Profile"
       />
       <div

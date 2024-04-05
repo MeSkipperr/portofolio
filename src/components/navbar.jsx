@@ -59,45 +59,14 @@ export default function Navbar({mode,onCheckboxChange,language,changeLanguageEN,
     }
 
 
-    const aboutURL =  () => {
-        switch (location.pathname) {
-            case '/':
-                return '/#about';
-            case '/contact':
-            case '/about':
-            case '/project':
-            case '/service':
-                return '/about';
-            default:
-                return null;
-            }
-        };
-    const projectURL =  () => {
-        switch (location.pathname) {
-            case '/':
-                return '/#project';
-            case '/contact':
-            case '/about':
-            case '/project':
-            case '/service':
-                return '/project';
-            default:
-                return null;
-            }
-        };
-    const serviceURL =  () => {
-        switch (location.pathname) {
-            case '/':
-                return '/#service';
-            case '/contact':
-            case '/about':
-            case '/project':
-            case '/service':
-                return '/service';
-            default:
-                return null;
-            }
-        };
+    const pathUrl = ()=>{
+        if(location.pathname === '/'){
+            return '#'
+        }else if(location.pathname !== '/'){
+            return '/'
+        }
+    }
+
     useEffect(() => {
         if (mode) {
             document.body.classList.add("dark");
@@ -147,9 +116,9 @@ export default function Navbar({mode,onCheckboxChange,language,changeLanguageEN,
                 
                 <div className="content gap-8 px-8 hidden lg:flex items-center">
                     <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={`/`}>{language ? 'BERANDA' : 'HOME'}</a>
-                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={aboutURL()}>{language ? 'TENTANG ' : 'ABOUT'}</a>
-                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={serviceURL()}>{language ? 'LAYANAN' : 'SERVICE'}</a>
-                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={projectURL()}>{language ? 'PROYEK' : 'PROJECT'}</a>
+                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={`${pathUrl()}about`}>{language ? 'TENTANG ' : 'ABOUT'}</a>
+                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={`${pathUrl()}service`}>{language ? 'LAYANAN' : 'SERVICE'}</a>
+                    <a className='text-lg cursor-pointer hover:text-second dark:hover:text-second dark:text-primary ' href={`${pathUrl()}project`}>{language ? 'PROYEK' : 'PROJECT'}</a>
 
                     <label className="language-label cursor-pointer text-lg  font-semibold dark:text-primary">
                         <input type="radio" name="bahasa" value="indonesia"  checked={language} className="hidden" onChange={changeLanguageID}/>
@@ -185,9 +154,9 @@ export default function Navbar({mode,onCheckboxChange,language,changeLanguageEN,
                 <div className={` content 
                         w-full backdrop-filter backdrop-blur-5 flex items-center flex-col gap-4 text-center `}>
                             <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={'/'}>{language ? 'BERANDA' : 'HOME'}</a>
-                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={aboutURL()}>{language ? 'TENTANG ' : 'ABOUT'}</a>
-                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={serviceURL()}>{language ? 'LAYANAN' : 'SERVICE'}</a>
-                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={projectURL()}>{language ? 'PROYEK' : 'PROJECT'}</a>
+                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={`${pathUrl()}about`}>{language ? 'TENTANG ' : 'ABOUT'}</a>
+                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={`${pathUrl()}service`}>{language ? 'LAYANAN' : 'SERVICE'}</a>
+                            <a className='text-lg   cursor-pointer hover:text-second dark:text-primary dark:hover:text-second' href={`${pathUrl()}project`}>{language ? 'PROYEK' : 'PROJECT'}</a>
 
                             <div className="flex justify-center">
                                 <label className="language-label cursor-pointer text-lg  font-semibold dark:text-primary">

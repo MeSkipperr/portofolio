@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+    import PropTypes from 'prop-types';
 import { useState,useEffect,useRef } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,7 +26,7 @@ export default function Project({ language }) {
         } else {
           setProjectsToShow(3); // Tampilan default tanpa sm: atau lg: tampilkan 3 proyek
         }
-      };
+    };
     
       useEffect(() => {
         updateProjectsToShow();
@@ -71,12 +71,16 @@ export default function Project({ language }) {
                     projectData[0].projectOther.slice(0, projectsToShow).map((project, index) => (
                         <div
                             key={index}
-                            className="rounded  m-auto bg-white w-3/4 p-2 pt-4 relative shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                            className="rounded  m-auto bg-white w-3/4 p-4 pt-4 relative shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                            data-aos="fade-up"
+                            data-aos-delay={'100'*index}
                         >
-                            <img src={project.image} className="w-60 rounded m-auto sm:w-72" alt={`Project ${index + 1}`} />
-                            <div className="w-auto p-2">
+                            <div className="aspect-square flex justify-center">
+                                <img src={project.image} className="w-60 rounded m-auto sm:w-80  " alt={`Project ${index + 1}`} />
+                            </div>
+                            <div className="w-auto ">
                                 <h1 className="text-2xl font-bold">{project.title}</h1>
-                                <p className="text-xl ">{language ? project.sub.ID : project.sub.EN}</p>
+                                <p className="text-xl truncate">{language ? project.sub.ID : project.sub.EN}</p>
                             </div>
                             <a href={`/project/${project.path}`}>
                                 <button className='w-full py-2 rounded-md cursor-pointer bg-second  text-white'>Detail</button>
@@ -87,14 +91,16 @@ export default function Project({ language }) {
                     projectData[0].projectCode.slice(0, projectsToShow).map((project, index) => (
                     <div
                         key={index}
-                        className="rounded  m-auto bg-white w-3/4 p-2 pt-4 relative shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                        className="rounded  m-auto bg-white w-3/4 p-4 pt-4 relative shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
                         data-aos="fade-up"
                         data-aos-delay={'100'*index}
                     >
-                        <img src={project.image} className="w-60 rounded m-auto sm:w-72" alt={`Project ${index + 1}`} />
-                        <div className="w-auto p-2">
+                        <div className="aspect-square flex justify-center">
+                            <img src={project.image} className="w-60 rounded m-auto sm:w-80  " alt={`Project ${index + 1}`} />
+                        </div>
+                        <div className="w-auto ">
                             <h1 className="text-2xl font-bold">{project.title}</h1>
-                            <p className="text-xl">{language ? project.sub.ID : project.sub.EN}</p>
+                            <p className="text-xl truncate">{language ? project.sub.ID : project.sub.EN}</p>
                         </div>
                         <a href={`/project/${project.path}`}>
                             <button className='w-full py-2 rounded-md cursor-pointer bg-second  text-white'>Detail</button>

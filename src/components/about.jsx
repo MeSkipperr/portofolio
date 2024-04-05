@@ -1,4 +1,4 @@
-import aboutPic from '../assets/aboutPic.webp';
+import aboutPic from '../assets/aboutPic.png';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import PropTypes from 'prop-types';
 import  { useEffect, useRef } from 'react';
@@ -88,3 +88,6 @@ export default function About({ language }) {
         </div>
     )
 }
+About.propTypes = {
+    language: PropTypes.bool.isRequired,
+};

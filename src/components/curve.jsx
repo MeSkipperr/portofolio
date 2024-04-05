@@ -32,8 +32,12 @@ const Curve = ({ children, backgroundColor }) => {
             "/project": sessionLanguage === 'ID' ? "Proyek" : "Project",
             "/service": sessionLanguage === 'ID' ? "Layanan" : "Service",
             "/contact": sessionLanguage === 'ID' ? "Kontak" : "Contact",
-            "/project/project1": 'project 1',
-            "/project/project2": 'project 2'
+            "/project/classTKJ2": 'TKJ 2',
+            "/project/cloudfile": 'Cloud File',
+            "/project/digitalClock": 'Digital Clock',
+            "/project/linktree": 'Link Tree',
+            "/project/server": 'Server',
+            "/project/ipAddress": 'IP Address',
         };
     }, []);
 

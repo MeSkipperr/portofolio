@@ -1,30 +1,13 @@
 import PropTypes from 'prop-types';
 
 export default function Footer({language}){
-    const aboutURL =  () => {
-        switch (location.pathname) {
-            case '/':
-                return '/#about';
-            case '/contact':
-            case '/about':
-            case '/project':
-                return '/about';
-            default:
-                return null;
-            }
-        };
-    const projectURL =  () => {
-        switch (location.pathname) {
-            case '/':
-                return '/#project';
-            case '/contact':
-            case '/about':
-            case '/project':
-                return '/project';
-            default:
-                return null;
-            }
-        };
+    const pathUrl = ()=>{
+        if(location.pathname === '/'){
+            return '#'
+        }else if(location.pathname !== '/'){
+            return '/'
+        }
+    }
     return(
         <div className="w-full h-72 bg-[#ececec] dark:bg-[#101012] flex justify-center items-center px-4">
             <div className="w-full lg:w-3/4 flex flex-col">
@@ -37,8 +20,10 @@ export default function Footer({language}){
                     <div className="flex flex-col lg:px-12">
                         <p className="dark:text-white text-lg sm:text-3xl">Tautan</p>
                         <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href="/">{language ? 'Beranda' : 'Home'}</a>
-                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={aboutURL()}>{language ? 'Tentang' : 'About'}</a>
-                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={projectURL()}>{language ? 'Proyek' : 'Project'}</a>
+                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}about`}>{language ? 'Tentang' : 'About'}</a>
+                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}service`}>{language ? 'Layanan' : 'Service'}</a>
+                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}project`}>{language ? 'Proyek' : 'Project'}</a>
+                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}contact`}>{language ? 'Kontak' : 'Contact'}</a>
                     </div>
                     <div className="flex flex-col lg:px-12">
                         <p className="dark:text-white text-lg sm:text-3xl">Sosial</p>

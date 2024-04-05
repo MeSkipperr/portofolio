@@ -31,13 +31,13 @@ export default function ShowProject({language}) {
 
     return (
         <div className=" dark:bg-darkBg w-full min-h-dvh  pt-24 lg:w-3/4">
-            <div className=" px-4 pb-24 lg:flex lg:w-3/4 lg:gap-12">
-                <div className=" flex justify-center items-center">
-                    <img src={selectProject.image} alt="project"  className='w-80 lg:w-[40rem]'/>
+            <div className=" px-4 pb-24 lg:justify-center lg:flex lg:w-full lg:gap-12">
+                <div className=" flex justify-center items-center size-80 lg:w-1/2 ">
+                    <img src={selectProject.image} alt="project"  className='object-contain h-full'/>
                 </div>
-                <div className="lg:pt-16">
+                <div className="lg:pt-16 lg:flex lg:flex-1 lg:flex-col">
                     <h1 className='font-bold text-xl dark:text-white mt-4 sm:text-3xl'>{selectProject.title}</h1>
-                    <p className='text-lg dark:text-white sm:text-2xl'>{language ? selectProject.sub?.ID : selectProject.sub?.EN}</p>
+                    <p className='text-lg dark:text-white sm:text-xl'>{language ? selectProject.sub?.ID : selectProject.sub?.EN}</p>
                 </div>
             </div>
             <div>

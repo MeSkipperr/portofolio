@@ -1,118 +1,72 @@
-import project1 from '../assets/project/1.png';
+// import project1 from '../assets/project/1.png';
+import clock from '../assets/project/clock.png';
+import linkTree from '../assets/project/linktree.png';
+import sharingFile from '../assets/project/sharingFile.png';
+import classTkj2 from '../assets/project/classTkj2.png';
+import connectServer from '../assets/project/connectServer.png';
+import manageIP from '../assets/project/manageIP.png';
+
 
 export const projectData =[
     {
         projectCode : [
                 {
-                    path: 'project1',
-                    title: 'Project 1',
+                    path: 'classTKJ2',
+                    title: 'Website TKJ 2',
                     sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
+                        ID: 'Ini adalah website lengkap untuk kelas TKJ2 dengan informasi tentang Wali Kelas, perangkat kelas, dan siswa. Website ini dilengkapi dengan fitur untuk melihat tugas, foto, dan video.Dibuat dengan menggunakan Next Js, Tailwind, Typescript, Node Js, dan Express.',
+                        EN: 'This is a complete website for TKJ2 class with information about Class Guardians, class devices, and students. The website includes features to view assignments, photos, and videos. Built with Next Js, Tailwind, Typescript, Node Js, dan Express.'
                     },
-                    image: project1,
+                    image: classTkj2,
                 },
                 {
-                    path: 'project2',
-                    title: 'Project 2',
+                    path: 'cloudfile',
+                    title: 'Cloud File',
                     sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
+                        ID: 'Cloud File adalah sebuah website untuk menyimpan file secara daring (online). Semua file dapat dicari dengan mengetikkan nama atau URL file. Dibangun dengan menggunakan React Js, Node Js, dan Express.',
+                        EN: 'Cloud File is a website for storing files online. All files can be searched by typing their name or URL. Built with React Js, Node Js, and Express.'
                     },
-                    image: project1,
+                    image: sharingFile,
                 },
                 {
-                    path: 'project3',
-                    title: 'Project 3',
+                    path: 'digitalClock',
+                    title: 'Digital Clock',
                     sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
+                        ID: 'Website ini merupakan jam digital yang juga menampilkan hari. Dilengkapi dengan fitur layar penuh dan mode terang atau mode gelap. Dibuat dengan HTML, CSS, dan JavaScript.',
+                        EN: 'This website is a digital clock that also displays the day. It comes with fullscreen and light or dark mode features. Built using HTML, CSS, and JavaScript'
                     },
-                    image: project1,
+                    image: clock,
                 },
                 {
-                    path: 'project4',
-                    title: 'Project 4',
+                    path:'linktree',
+                    title: 'Link Tree',
                     sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
+                        ID: 'Website Link Tree untuk mengakses profil. Dibuat menggunakan HTML dan CSS.',
+                        EN: 'Link Tree website for accessing profiles. Built using HTML and CSS.'
                     },
-                    image: project1,
-                },
-                {
-                    path: 'project5',
-                    title: 'Project 5',
-                    sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
-                    },
-                    image: project1,
-                },
-                {
-                    path: 'project6',
-                    title: 'Project 6',
-                    sub:{
-                        ID: 'Ini adalah pengertian dari project',
-                        EN: 'This is a brief explanation for my project'
-                    },
-                    image: project1,
+                    image: linkTree,
                 },
         ],
         projectOther : [
             {
-                path: 'projectother1',
-                title: 'Project other1',
+                path: 'server',
+                title: 'Server',
                 sub:{
-                    ID: 'Ini adalah pengertian dari project aaaaaaa',
-                    EN: 'This is a brief explanation for my project'
+                    ID: "Proyek ini bertujuan agar setiap komputer dapat mengakses setiap server yang tersedia.",
+                    EN: "Project to enable every computer to access any available server."
                 },
-                image: project1,
+                image: connectServer,
             },
             {
-                path: 'projectother2',
-                title: 'Project other2',
+                path: 'ipAddress',
+                title: 'IP Address',
                 sub:{
-                    ID: 'Ini adalah pengertian dari project ',
-                    EN: 'This is a brief explanation for my project'
+                    ID: 'Proyek ini bertujuan agar setiap komputer dapat saling terhubung dan berbagi IP untuk efisiensi yang lebih baik.',
+                    EN: 'Project to enable computers to connect to each other and share IP addresses for improved efficiency.'
                 },
-                image: project1,
-            },
-            {
-                path: 'projectother3',
-                title: 'Project other3',
-                sub:{
-                    ID: 'Ini adalah pengertian dari project',
-                    EN: 'This is a brief explanation for my project'
-                },
-                image: project1,
-            },
-            {
-                path: 'projectother4',
-                title: 'Project other4',
-                sub:{
-                    ID: 'Ini adalah pengertian dari project ',
-                    EN: 'This is a brief explanation for my project'
-                },
-                image: project1,
-            },
-            {
-                path: 'projectother5',
-                title: 'Project other5',
-                sub:{
-                    ID: 'Ini adalah pengertian dari project ',
-                    EN: 'This is a brief explanation for my project'
-                },
-                image: project1,
-            },
-            {
-                path: 'projectother6',
-                title: 'Project other6',
-                sub:{
-                    ID: 'Ini adalah pengertian dari project ',
-                    EN: 'This is a brief explanation for my project'
-                },
-                image: project1,
-            },
+                image: manageIP,
+            }
+
         ],
     }
 ]

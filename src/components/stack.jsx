@@ -11,12 +11,12 @@ import sql from '../assets/stact/sql.svg';
 import mongodb from '../assets/stact/mongodb.svg';
 import react from '../assets/stact/react.svg';
 import tailwind from '../assets/stact/tailwind.svg';
+import nextjs from '../assets/stact/nextjs.png';
+import typescript from '../assets/stact/typescript.png';
 
-import ai from '../assets/otherSkill/ai.svg';
 import excel from '../assets/otherSkill/excel.svg';
 import git from '../assets/otherSkill/git.svg';
 import powerpoint from '../assets/otherSkill/powerpoint.svg';
-import ps from '../assets/otherSkill/ps.svg';
 import word from '../assets/otherSkill/word.svg';
 import mikrotik from '../assets/otherSkill/mikrotik.png';
 import cisco from '../assets/otherSkill/cisco.png';
@@ -32,12 +32,12 @@ const stackImages = [
   { src: react, alt: 'react', title: 'React' },
   { src: tailwind, alt: 'tailwind', title: 'Tailwind CSS' },
   { src: mongodb, alt: 'mongodb', title: 'MongoDB' },
+  { src: nextjs, alt: 'next js', title: 'Next Js' },
+  { src: typescript, alt: 'typescript', title: 'Typescript' },
 ];
 
 const otherImages = [
   { src: git, alt: 'Git Logo', title: 'Git' },
-  { src: ps, alt: 'Photoshop Logo', title: 'Adobe Photoshop' },
-  { src: ai, alt: 'AI Logo', title: 'Adobe Ilustrator' },
   { src: powerpoint, alt: 'PowerPoint Logo', title: 'Microsoft PowerPoint' },
   { src: word, alt: 'Word Logo', title: 'Microsoft Word' },
   { src: excel, alt: 'Excel Logo', title: 'Microsoft Excel' },
