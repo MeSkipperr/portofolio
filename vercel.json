@@ -22,27 +22,27 @@
         },
         {
             "src": "/project/classTKJ2",
-            "dest": "TKJ 2"
+            "dest": "/"
         },
         {
             "src": "/project/cloudfile",
-            "dest": "Cloud File"
+            "dest": "/"
         },
         {
             "src": "/project/digitalClock",
-            "dest": "Digital Clock"
+            "dest": "/"
         },
         {
             "src": "/project/linktree",
-            "dest": "Link Tree"
+            "dest": "/"
         },
         {
             "src": "/project/server",
-            "dest": "Server"
+            "dest": "/"
         },
         {
             "src": "/project/ipAddress",
-            "dest": "IP Address"
+            "dest": "/"
         }
     ]
     
