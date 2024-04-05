@@ -2,7 +2,7 @@
 import clock from '../assets/project/clock.png';
 import linkTree from '../assets/project/linktree.png';
 import sharingFile from '../assets/project/sharingFile.png';
-import classTkj2 from '../assets/project/classTkj2.png';
+import classTkj2 from '../assets/project/classtkj2.png';
 import connectServer from '../assets/project/connectServer.png';
 import manageIP from '../assets/project/manageIP.png';
 
