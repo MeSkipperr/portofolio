@@ -23,7 +23,7 @@ export default function Footer({language}){
                         <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}about`}>{language ? 'Tentang' : 'About'}</a>
                         <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}service`}>{language ? 'Layanan' : 'Service'}</a>
                         <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}project`}>{language ? 'Proyek' : 'Project'}</a>
-                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`${pathUrl()}contact`}>{language ? 'Kontak' : 'Contact'}</a>
+                        <a className=" pl-1 text-[#A2A9B4] text-sm sm:text-xl" href={`/contact`}>{language ? 'Kontak' : 'Contact'}</a>
                     </div>
                     <div className="flex flex-col lg:px-12">
                         <p className="dark:text-white text-lg sm:text-3xl">Sosial</p>

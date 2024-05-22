@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// import aboutPic from '../assets/aboutPic.webp';
+import aboutPic from '../assets/aboutPic.png';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -29,7 +29,7 @@ export default function Contact({language}) {
 
             {/* About section */}
             <div className="w-full my-16 gap-8 flex flex-col">
-                {/* <img src={aboutPic} alt="about" className='w-24 sm:w-40' /> */}
+                <img src={aboutPic} alt="about" className='w-24 sm:w-40' />
                 <h2 className="dark:text-white text-black text-4xl sm:text-7xl">{language ? 'Mari kita mulai proyek bersama' : "Let's start a project together"}</h2>
             </div>
 
