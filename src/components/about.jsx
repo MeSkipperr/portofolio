@@ -32,12 +32,12 @@ export default function About({ language }) {
     return (
         <div id='about' ref={aboutRef} className="h-[110vh] w-full flex justify-center items-center flex-col lg:flex-row relative">
             <p className='text-third text-lg font-extrabold absolute left-8 top-20 sm:left-[15%] sm:top-32 lg:left-0'>{language ? 'Tentang ' : "About"}</p>
-            <div className=" w-full sm:w-1/2 lg:w-3/4  " >
+            <div className=" w-full sm:w-1/2 lg:w-3/4 " >
                 <div className="relative w-auto py-8 lg:auto m-auto">
                     <img src={aboutPic} className=' w-52 sm:w-64 lg:w-96 m-auto' />
                     <div className=" bg-third text-base lg:text-xl text-white absolute px-4 py-2 rounded-lg lg:left-12 lg:top-14 top-8 left-2">01 September 2007 </div>
                     <div className=" bg-third text-base lg:text-xl text-white absolute px-4 py-2 rounded-lg lg:bottom-12 lg:right-8 bottom-4 right-2">Bali, Indonesia </div>
-                    <div className="flex-col flex gap-4 m-4 absolute bottom-0 lg:hidden items-center" >
+                    <div className="flex-col flex gap-4 m-4 absolute bottom-0  items-center" >
                         <a href="https://github.com/MeSkipperr" target="_blank" rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faGithub} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="3x" />
                         </a>
@@ -74,17 +74,7 @@ export default function About({ language }) {
                     </p> */}
                 </div>
             </div>
-            <div className="hidden  absolute bottom-32  lg:flex gap-10 m-4">
-                <a href="https://github.com/MeSkipperr" target="_blank" rel="noopener noreferrer" >
-                    <FontAwesomeIcon icon={faGithub} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
-                </a>
-                <a href="https://www.instagram.com/kdk.yolaandika" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
-                </a>
-                <a href="mailto:ikadekyolaandika02@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faEnvelope} className='dark:text-white text-black hover:text-third dark:hover:text-third' size="5x" />
-                </a>
-            </div>
+
         </div>
     )
 }
