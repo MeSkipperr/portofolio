@@ -1,4 +1,4 @@
-// import aboutPic from '../assets/aboutPic.png';
+import aboutPic from '../assets/aboutPic.png';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import PropTypes from 'prop-types';
 import  { useEffect, useRef } from 'react';
@@ -34,7 +34,7 @@ export default function About({ language }) {
             <p className='text-third text-lg font-extrabold absolute left-8 top-20 sm:left-[15%] sm:top-32 lg:left-0'>{language ? 'Tentang ' : "About"}</p>
             <div className=" w-full sm:w-1/2 lg:w-3/4  " >
                 <div className="relative w-auto py-8 lg:auto m-auto">
-                    {/* <img src={aboutPic} className=' size-31 sm:w-64 lg:w-96 m-auto' /> */}
+                    <img src={aboutPic} className=' w-52 sm:w-64 lg:w-96 m-auto' />
                     <div className=" bg-third text-base lg:text-xl text-white absolute px-4 py-2 rounded-lg lg:left-12 lg:top-14 top-8 left-2">01 September 2007 </div>
                     <div className=" bg-third text-base lg:text-xl text-white absolute px-4 py-2 rounded-lg lg:bottom-12 lg:right-8 bottom-4 right-2">Bali, Indonesia </div>
                     <div className="flex-col flex gap-4 m-4 absolute bottom-0 lg:hidden items-center" >
